@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Chill Movie</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="login-card">
+        <div class="login-card-header">
+          <div class="header-logo">
+            <img
+              width="150px"
+              height="40px"
+              src="../assets/logo.png"
+              alt="logo.png"
+            />
+          </div>
+          <div class="header-text">
+            <h1>Masuk</h1>
+            <p>Selamat datang kembali!</p>
+          </div>
+        </div>
+        <form class="login-card-input">
+          <div class="input-username">
+            <label for="Username">Username</label>
+            <input
+              type="text"
+              placeholder="Masukkan username"
+              spellcheck="false"
+            />
+          </div>
+          <div class="input-password">
+            <label for="Password">Kata Sandi</label>
+            <div class="input-box">
+              <input
+                type="password"
+                placeholder="Masukkan kata sandi"
+                spellcheck="false"
+                id="show-password"
+              />
+              <i class="fa-regular fa-eye-slash" id="toggle-password"></i>
+            </div>
+          </div>
+        </form>
+        <div class="login-card-helper">
+          <div class="helper-register-link">
+            <p>
+              Belum punya akun? <span><a href="../register">Daftar</a></span>
+            </p>
+          </div>
+          <div class="helper-forgot-link">
+            <a href="#">Lupa kata sandi?</a>
+          </div>
+        </div>
+        <div class="login-card-button">
+          <button class="login-button" type="submit">Login</button>
+          <p>Atau</p>
+          <button class="login-button-google" type="submit">
+            <span><img src="../assets/logoGoogle.png" alt="" /></span> Masuk
+            dengan Google
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
