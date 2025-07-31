@@ -132,7 +132,7 @@ body {
 }
 .hero-section {
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: 587px;
   position: relative;
   display: flex;
@@ -267,7 +267,7 @@ body {
 }
 
 /*  film section */
-section.film-section {
+.film-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -543,11 +543,15 @@ footer .section-footer-menu {
 }
 
 @media screen and (max-width: 768px) {
+  .body {
+    width: 100%;
+  }
   .header {
     height: 65px;
     position: sticky;
     top: 0;
     z-index: 100;
+    padding-inline: 1rem;
   }
   .navbar-logo .logo-big {
     display: none;
@@ -584,15 +588,25 @@ footer .section-footer-menu {
 
   /* hero-section */
   main {
-    width: 100vw;
+    width: 100%;
   }
   .hero-section {
+    width: 100%;
     height: 225px;
     gap: 1rem;
   }
+  .hero-image {
+    width: 100%;
+    height: 100%;
+  }
   .hero-text {
+    padding-inline: 1rem;
+    width: 100%;
     display: flex;
     gap: 0.5rem;
+  }
+  .hero-title {
+    padding: 0;
   }
   .hero-title h1 {
     font-size: 24px;
@@ -603,6 +617,7 @@ footer .section-footer-menu {
   }
   .hero-button {
     gap: 1rem;
+    padding: 0;
   }
   .button-left {
     gap: 0.5rem;
@@ -630,6 +645,11 @@ footer .section-footer-menu {
   }
 
   /* Main */
+  section.film-section {
+    width: 100%;
+    padding-block: 3rem;
+    padding-inline: 1rem;
+  }
   .section-wrap h2 {
     font-size: 18px;
   }
@@ -700,7 +720,8 @@ footer .section-footer-menu {
     gap: 2rem;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 3rem;
+    padding-block: 3rem;
+    padding-inline: 1rem;
   }
   footer .section-copyright {
     flex-direction: column;

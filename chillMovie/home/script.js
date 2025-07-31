@@ -9,7 +9,7 @@ profileToggle.addEventListener("click", function (e) {
 
 // Close dropdown
 document.addEventListener("click", function () {
-  dropdown.classList.remove("show");
+  profileDropdown.classList.remove("show");
 });
 
 // Swiper JS Landscape
